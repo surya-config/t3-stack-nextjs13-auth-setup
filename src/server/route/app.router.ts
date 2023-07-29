@@ -1,9 +1,8 @@
-import { trpcProcedure, trpcRouter } from "../trpc";
+import { trpcRouter } from "../trpc";
+import { authRouter } from "./auth.router";
 
 export const appRouter = trpcRouter({
-  init: trpcProcedure.query(() => {
-    return "Hello world!";
-  }),
+  auth: authRouter,
 });
 
 // export type definition of API

@@ -32,8 +32,10 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         </head>
         <body>
           <div className={poppins.className}>
-            <div className="w-full max-w-screen-2xl m-auto overflow-hidden">
-              {children}
+            <div className="bg-gray-100">
+              <div className="w-full max-w-screen-2xl bg-gray-100 m-auto overflow-hidden">
+                {children}
+              </div>
             </div>
           </div>
         </body>
